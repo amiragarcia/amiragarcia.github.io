@@ -61,6 +61,8 @@ body{
 }
 
 .menu{
+	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	background: #FFF6D9;
@@ -71,13 +73,9 @@ body{
 	text-align: center;
 }
 
-.menu li{
-	display: inline-block;
+.menu > div{
+	flex: 1 1 0;
 	text-align: center;
-}
-
-.menu li a:hover{
-	background: grey;
 }
 
 /*.portada{
@@ -98,11 +96,15 @@ body{
 .boton{
 	text-decoration: none;
 	border-radius: 3px;
-	background-color: green;
+	background-color: #E4B2F1;
 	margin: 15px 5px;
     color: white;
     padding: 5px 15px;
     display: block;
+}
+
+.boton:hover{
+	background: #AA53C1;
 }
 
 .simple-grid{
