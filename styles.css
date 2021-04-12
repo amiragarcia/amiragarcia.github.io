@@ -1,0 +1,179 @@
+html, body, div, span,h1, h2, p,
+a, img, strong, ul, li, form,
+table, article, aside, footer, header,
+menu, nav, section, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: arial;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;	
+}
+
+nav{
+	background-color: #f4f4f4;
+	padding:10px;
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+}
+
+nav ul{
+	white-space: nowrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+nav li{
+	width: 25%;
+	display: inline-block;
+	font-size: 24px;
+}
+
+nav li a{
+	text-decoration: none;
+	color: #4b4b4b;
+}
+
+div.mid{
+	background-color:#f9f9f9;
+	color: #f48b94; 
+	font-size: 20px;
+	height: 70px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2{
+	color: #f63232;
+	font-size: 48px;
+}
+
+section p{
+	margin:16px 0px;
+	margin-left: 50px;
+    margin-right: 20px;
+	line-height: 2em;
+	color: #4b4b4b;
+}
+
+img{
+	width: 60%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.simple-grid{
+	display: flex;
+	padding: 30px 20px;
+}
+
+.simple-grid .left, .simple-grid .right{
+	flex: 1;
+}
+
+
+/*slider*/
+.container{
+	width: 800px;
+	margin: auto;
+}
+
+.padre p{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0;
+	top: 250px;
+	left: 0;
+
+}
+	#slider{
+	overflow:hidden;
+	}
+
+	#slider .kevon{
+	position:relative;
+	width:500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+	}
+
+	#slider .kevon div {
+		float: left;
+		width: 20%;
+	}
+
+	.padre img{
+		display: block;
+		width: 100%;
+	}
+
+	.padre{
+		position: relative;
+	}
+
+	@keyframes slider{
+		0%{
+			left: 0;
+		}
+		20%{
+			left: 0;
+		}
+		25%{
+			left: -100%;
+		}
+		45%{
+			left: -100%;
+		}
+		50%{
+			left: -200%;
+		}
+		70%{
+			left: -200%;
+		}
+		75%{
+			left: -300%;
+		}
+		95%{
+			left: -300%;
+		}
+		100%{
+			left: -400%;
+		}
+	}
+/*hasta acá es el slider*/
+
+.button{
+	display: block;
+	width: 100px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+form{
+	width: 350px;
+	margin: auto;
+}
+
+.left.networks, .right.networks{
+	text-align: center;
+}
+
+footer p{
+	display: block;
+	text-align: center;
+}
